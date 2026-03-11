@@ -6,10 +6,19 @@ color:#333;
 }
 
 header{
-background:#b30000;
+
+background-image:url("images/fond.jpg");
+
+background-size:cover;
+
+background-position:center;
+
 color:white;
+
 text-align:center;
-padding:60px 20px;
+
+padding:120px 20px;
+
 }
 
 h1{
