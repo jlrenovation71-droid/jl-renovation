@@ -102,39 +102,23 @@ nettoyage conduits et débistrage.
 </div>
 
 </section>
-<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+<form action="https://formspree.io/f/xyknjeba" method="POST">
 
-<script>
+<input type="text" name="name" placeholder="Nom" required>
 
-(function(){
-emailjs.init("TS5sfT6sguCFn-ivz");
-})();
+<input type="email" name="email" placeholder="Email" required>
 
-document.getElementById("contact-form")
-.addEventListener("submit", function(e){
+<input type="tel" name="phone" placeholder="Téléphone">
 
-e.preventDefault();
+<textarea name="message" placeholder="Votre message" required></textarea>
 
-emailjs.sendForm(
-"service_f8io6z4",
-"template_szfc19a",
-this,
-"TS5sfT6sguCFn-ivz"
-).then(function(){
+<button class="btn call">Envoyer</button>
 
-document.getElementById("confirmation").innerText =
-"Votre demande a été envoyée avec succès !";
 
-}, function(error){
 
-document.getElementById("confirmation").innerText =
-"Erreur lors de l'envoi.";
+</script>
 
-console.log(error);
 
-});
-
-});
 
 </script>
 
