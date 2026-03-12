@@ -130,6 +130,7 @@ Envoyer la demande
 <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
 
 <script>
+
 (function(){
 emailjs.init("TS5sfT6sguCFn-ivz");
 })();
@@ -142,7 +143,8 @@ e.preventDefault();
 emailjs.sendForm(
 "service_f8io6z4",
 "template_szfc19a",
-this
+this,
+"TS5sfT6sguCFn-ivz"
 ).then(function(){
 
 document.getElementById("confirmation").innerText =
@@ -153,10 +155,15 @@ document.getElementById("confirmation").innerText =
 document.getElementById("confirmation").innerText =
 "Erreur lors de l'envoi.";
 
+console.log(error);
+
 });
 
 });
+
 </script>
+
+
 
 </body>
 </html>
